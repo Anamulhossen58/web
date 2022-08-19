@@ -1,0 +1,274 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: sans-serif;
+	
+}
+.header{
+	background-image: linear-gradient(rgba(0, 0, 255, 0.507),rgba(0, 0, 255, 0.507)),url('background.jpg');
+	background-position: center top;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	width: 100%;
+	height: 100vh;
+	position: relative;
+	color: white;
+	padding: 0 10%;
+	padding-top: 2%;
+}
+nav{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	text-transform: uppercase;
+}
+nav ul li{
+	list-style: none;
+	display: inline-block;
+	margin: 0 15px;
+	padding: 10px;
+	transition: 0.3s;
+	cursor: pointer;
+
+}
+
+nav ul li:hover{
+	background-color: antiquewhite;
+	color: black;
+}
+
+nav h1{
+	color: rgba(223, 53, 214, 0.664);
+	
+	font-size: 27px;
+	font-family: 'Edu TAS Beginner', cursive;
+}
+.heading{
+	float: right;
+	width: 400px;
+}
+.heading h1{
+	font-size: 62px;
+	margin: 27% 0 0 0;
+	
+
+}
+.heading input{
+	background-color: transparent;
+	
+	
+	font-size: 17px;
+	color: white;
+	border: 1px solid white;
+	padding: 10px 15px;
+	margin-top: 30px;
+	border-radius: 15px;
+	width: 150px;
+	display: inline-block;
+	text-transform: uppercase;cursor: pointer;
+	transition: 0.5s;
+
+}
+
+.heading input:hover{
+	background-color: orange;
+	
+	
+
+}
+.desc{
+	position: absolute;
+	bottom: 10%;
+}
+.desc p{
+	font-family: 'Edu TAS Beginner', cursive;
+	font-size: 25px;
+}
+@media screen and (max-width:600px){
+	nav{
+		flex-direction: column;
+		margin-bottom: 20px;
+		
+		
+	}
+	nav ul li {
+		display: block;
+		text-align: center;
+		font-size: 14px;
+
+	}
+	.heading h1{
+		font-size: 35px;
+		margin-top: 10%;
+		text-align: center;
+	
+	}
+	.heading{
+		float:none;
+		width: 100%;
+		text-align: center;
+	}
+	.heading input{
+		
+		font-size: 12px;
+		color: white;
+		border: 1px solid white;
+		padding: 5px 10px;
+		margin-top: 20px;
+		border-radius: 5px;
+		width: 150px;
+		height: 30px;
+		
+	}
+	.desc p{
+	
+		font-size: 20px;
+	}
+
+	.header{
+		background-image: url('background.jpg');
+		background-position: 20% top;
+		background-size: cover;
+		background-repeat: no-repeat;
+		
+		width: 100%;
+		
+		position: relative;
+		color: white;
+		padding: 0 10%;
+		padding-top: 2%;
+	}
+	
+
+
+}
+
+/* header ends here...... */
+
+
+
+.two div h1{
+	font-size: 62px;
+	text-transform: capitalize;
+	font-weight: 500;
+	font-family: 'Edu TAS Beginner', cursive;
+	text-align: center;
+	padding: 120px 0 20px 0;
+
+}
+.two div p{
+	text-align: center;
+	font-family: 'Edu TAS Beginner', cursive;
+	font-size: 16px;
+	padding: 10px;
+	padding-bottom: 50px;
+
+}
+.two .row{
+	display:flex;
+	
+	
+}
+.two .row .col{
+	flex-basis: 48%;
+	margin: 20px;
+	
+}
+.two .row .col img{
+	width: 100%;
+	height: auto;
+}
+
+@media screen and (max-width:600px){
+
+	.two div h1{
+		font-size: 35px;
+		padding: 80px 0 20px 0;
+	
+	}
+	.two .row{
+		flex-direction: column;
+		
+	}
+
+}
+
+/* section two ends here... */
+.three{
+	padding: 0 5%;
+}
+.three div{
+	background-color: azure;
+	padding-bottom: 50px;
+}
+.three div h1{
+	font-size: 62px;
+	font-weight: 500;
+	font-family: 'Edu TAS Beginner', cursive;
+	text-align: center;
+	margin-bottom: 20px;
+	
+
+}
+.three div p{
+	font-size: 16px;
+	font-weight: 500;
+	font-family: 'Edu TAS Beginner', cursive;
+	text-align: center;
+	
+	line-height: 25px;
+
+}
+.three .row{
+	display: flex;
+}
+
+.three .row .col{
+	flex-basis: 32%;
+	padding: 20px;
+}
+@media screen and (max-width:600px){
+	.three .row{
+		flex-direction: column;
+	}
+	.three div h1{
+		font-size: 40px;
+	}
+
+}
+
+/* section three ends here.... */
+
+footer{
+	font-size: 12px;
+	font-weight: 400;
+	font-style: italic;
+	color: rgb(243, 147, 29);
+	background-color: rgba(122, 236, 198, 0.555);
+	padding: 50px 0 50px 0;
+	text-align: center;
+}
+footer .roe div{
+	height: 50px;
+	width: 80px;
+	background-color: azure;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+	transition: 0.3s;
+	cursor: pointer;
+	
+	text-align: center;
+	margin: 20px;
+}
+footer .roe{
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+footer .roe div:hover{
+	background-color: beige;
+}
